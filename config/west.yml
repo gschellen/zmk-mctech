@@ -8,6 +8,8 @@ manifest:
     # nice_oled - nice_epaper - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -29,5 +31,9 @@ manifest:
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
+    - name: zmk-helpers
+      remote: urob
+      path: modules/zmk/helpers
+      revision: v0.2
   self:
     path: config
