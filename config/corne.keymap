@@ -44,7 +44,7 @@ ZMK_HOLD_TAP(hmr,
 / {
       conditional_layers {
         compatible = "zmk,conditional-layers";
-        adjust_layer {
+        super_layer {
             if-layers = <1 2>;
             then-layer = <3>;
         };
@@ -87,11 +87,6 @@ ZMK_HOLD_TAP(hmr,
 
         raise_layer {
             display-name = "RAISE";
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &none  &kp GRAVE &trans    &trans     &trans    &trans       &kp HOME   &kp PG_DN  &kp PG_UP &kp END     &none   &none
@@ -100,6 +95,7 @@ ZMK_HOLD_TAP(hmr,
                            &trans     &trans    &trans       &trans     &trans     &trans
             >;
         };
+
         super_layer {
             display-name = "SUPER";
 
