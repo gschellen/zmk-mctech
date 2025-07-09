@@ -19,6 +19,12 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // Right-hand keys.
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // Thumb keys.
 
+#define BT0         BT_SEL 0
+#define BT1         BT_SEL 1
+#define BT2         BT_SEL 2
+#define BT3         BT_SEL 3
+#define BT4         BT_SEL 4
+
 /* Left-hand HRMs. */
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
@@ -90,7 +96,7 @@ ZMK_HOLD_TAP(hmr,
             display-name = "SUPER";
 
             bindings = <
-&bt BT_CLEAR  &trans    &trans     &trans    &trans       &trans     &kp F7    &kp F8    &kp F9  &kp F10
+&bt BT_CLR    &trans    &trans     &trans    &trans       &trans     &kp F7    &kp F8    &kp F9  &kp F10
 &bt BT4       &bt BT3   &bt BT2    &bt BT1   &bt BT0      &trans     &kp F4    &kp F5    &kp F6  &kp F11
 &trans        &trans    &trans     &trans    &trans       &trans     &kp F1    &kp F2    &kp F3  &kp F12
                         &trans     &trans    &trans       &trans     &trans     &trans
