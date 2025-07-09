@@ -65,6 +65,7 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 SIMPLE_MORPH(magic_shift, SFT, &sk LSHFT, &caps_word)
 &caps_word { // Mods deactivate caps-word, requires PR #1451. [TODO: rebase]
   /delete-property/ ignore-modifiers;
+};
  
 / {
       conditional_layers {
