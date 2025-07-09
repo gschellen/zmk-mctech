@@ -42,6 +42,13 @@ ZMK_HOLD_TAP(hmr,
 )
 
 / {
+      conditional_layers {
+        compatible = "zmk,conditional-layers";
+        super_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -73,7 +80,7 @@ ZMK_HOLD_TAP(hmr,
 
             bindings = <
 &kp GRAVE &trans    &trans     &trans    &trans       &kp HOME   &kp PG_DN  &kp PG_UP &kp END     &none
-&kp MINUS &kp UNDER &kp BSHL   &kp EXCL  &kp PIPE     &kp LEFT   &kp DOWN   &none     &none       &none
+&kp MINUS &kp UNDER &kp BSLH   &kp EXCL  &kp PIPE     &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT   &none
 &trans    &trans    &trans     &trans    &trans       &trans     &kp C_PREV &kp C_PP  &kp C_NEXT  &none
                     &trans     &trans    &trans       &trans     &trans     &trans
             >;
