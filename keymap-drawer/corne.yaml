@@ -23,7 +23,7 @@ layers:
   - '&hmr RCTRL J'
   - '&hmr RSHFT K'
   - '&hmr RALT L'
-  - '&hmr RGUI SEMI'
+  - '&hmr RGUI SQT'
   - ''
   - ''
   - Z
@@ -97,7 +97,7 @@ layers:
   - Page Down
   - Page Up
   - End
-  - ''
+  - MUTE
   - ''
   - ''
   - '-'
@@ -109,7 +109,7 @@ layers:
   - ↓
   - ↑
   - →
-  - ''
+  - Vol Up
   - ''
   - ''
   - '`'
@@ -121,7 +121,7 @@ layers:
   - ⏮️
   - ⏯
   - ⏭️
-  - ''
+  - VOL DOWN
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
