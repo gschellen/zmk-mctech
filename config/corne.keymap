@@ -59,7 +59,7 @@ SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
 SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 
 // Tap: sticky-shift, Shift + tap/double tap: caps_word,
-ZMK_TAP_DANCE(magic_shift, bindings = &tap_shift, &caps_word;
+ZMK_TAP_DANCE(magic_shift, bindings = <&tap_shift>, <&caps_word>;
               tapping-term-ms = <200>;)
 SIMPLE_MORPH(tap_shift, SFT, &sk LSHFT, &caps_word)
 &caps_word { // Mods deactivate caps-word, requires PR #1451. [TODO: rebase]
