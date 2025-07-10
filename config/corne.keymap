@@ -97,7 +97,7 @@ ZMK_ADAPTIVE_KEY(
 &none &kp Q        &kp W        &kp E         &kp R         &kp T           &kp Y      &kp U         &kp I         &kp O        &kp P          &none
 &none &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G           &kp H      &hmr RCTRL J  &hmr RSHFT K  &hmr RALT L  &hmr RGUI SQT  &none
 &none &kp Z        &kp X        &kp C         &kp V         &kp B           &kp N      &kp M         &comma_morph  &dot_morph   &kp FSLH       &none
-                                &magic_shift  &kp BSPC      &lt 1 DEL       &lt 2 RET  &kp SPC       &kp TAB
+                                MAGIC_SHIFT   &kp BSPC      &lt 1 DEL       &lt 2 RET  &kp SPC       &kp TAB
             >;
         };
 
