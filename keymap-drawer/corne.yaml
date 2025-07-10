@@ -37,7 +37,7 @@ layers:
   - '&dot_morph'
   - /
   - ''
-  - '&magic_shift LSHFT 0'
+  - '&magic_shift'
   - $$mdi:backspace-outline$$
   - {t: ⌦, h: LOW}
   - {t: ⏎, h: RAISE}
