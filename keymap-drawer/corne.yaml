@@ -121,7 +121,7 @@ layers:
   - ⏮️
   - ⏯
   - ⏭️
-  - VOL DOWN
+  - Vol Down
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
